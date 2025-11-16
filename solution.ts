@@ -84,3 +84,23 @@ const users = [
   { id: 3, name: 'Rumi', email: 'rumi@example.com', isActive: true },
 ];
 
+
+// Problem-6
+
+interface TBook {
+    title: string;
+    author: string;
+    publishedYear: number;
+    isAvailable: boolean
+}
+
+function printBookDetails (items:TBook){
+    console.log(`Tile: ${items.title}, Author: ${items.author}, Published: ${items.publishedYear}, Available: ${items.isAvailable}`);
+}
+const myBook: TBook = {
+  title: 'The Great Gatsby',
+  author: 'F. Scott Fitzgerald',
+  publishedYear: 1925,
+  isAvailable: true,
+};
+
