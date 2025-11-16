@@ -49,4 +49,19 @@ const person1 = new Person('Alice', 25)
 
 // Problem-4
 
+type Tbook = {title: string; rating: number}
+
+function filterByRating (param: Tbook[]): Tbook[]{
+
+    return param.filter(function(key){
+        return key.rating >= 4;
+    })
+}
+
+const books = [
+  { title: 'Book A', rating: 4.5 },
+  { title: 'Book B', rating: 3.2 },
+  { title: 'Book C', rating: 5.0 },
+];
+
 
