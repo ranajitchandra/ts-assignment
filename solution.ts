@@ -65,3 +65,22 @@ const books = [
 ];
 
 
+// Problem-5
+
+type Tarr = {
+    id: number;
+    name: string;
+    email: string;
+    isActive: boolean
+}
+
+function filterActiveUsers (arr: Tarr[]): Tarr[] {
+    return arr.filter(key => key.isActive === true)
+}
+
+const users = [
+  { id: 1, name: 'Rakib', email: 'rakib@example.com', isActive: true },
+  { id: 2, name: 'Asha', email: 'asha@example.com', isActive: false },
+  { id: 3, name: 'Rumi', email: 'rumi@example.com', isActive: true },
+];
+
