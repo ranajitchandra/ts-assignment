@@ -104,7 +104,7 @@ const myBook: TBook = {
   isAvailable: true,
 };
 
-// Problem-6
+// Problem-7
 
 function getUniqueValues (arr1: number[], arr2: number[]){
     return Array.from(new Set([...arr1, ...arr2]))
@@ -112,4 +112,3 @@ function getUniqueValues (arr1: number[], arr2: number[]){
 
 const array1 = [1, 2, 3, 4, 5,5,5,5,5,5,3,3,3,];
 const array2 = [3, 4, 5, 6, 7,8,8,8,9,10,10,12,19];
-console.log(getUniqueValues(array1, array2));
